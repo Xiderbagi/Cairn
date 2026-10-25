@@ -26,7 +26,8 @@ Tailwind CSS 4 · Vitest. Bank feeds (Flinks) and billing (Stripe) are planned; 
    npx supabase link --project-ref <your-ref>
    npx supabase db push
    ```
-   Or paste `supabase/migrations/0001_init.sql` into the SQL editor.
+   Or paste `supabase/migrations/0001_init.sql` into the SQL editor and run it. `0002_receipts_storage.sql`
+   is optional for now (photo storage is not used yet).
 2. In Supabase → Authentication → URL configuration, add `http://localhost:3000/auth/callback` as a redirect URL.
 3. Configure the app:
    ```bash
